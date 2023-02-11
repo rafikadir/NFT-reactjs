@@ -12,3 +12,11 @@ body {
 p {
     font-size: 18px;
 }
+
+
+/* Responsive CSS for Mobile Devices */
+@media screen and (max-width: 575px){
+    p {
+        font-size: 16px;
+    }
+}

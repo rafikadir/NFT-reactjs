@@ -33,8 +33,8 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="bg-black md:py-4 py-2 w-full">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className="bg-black md:py-4 py-2 w-full fixed">
+            <div className="container mx-auto flex justify-between items-center px-[10px]">
                 <a href="/">
                     <img src={logo} className="md:max-w-[150px] max-w-[130px]" alt="logo"/>
                 </a>
