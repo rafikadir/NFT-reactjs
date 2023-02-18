@@ -3,7 +3,7 @@ import banner from '../Assets/Img/banner.png';
 
 const Banner = () => {
     return (
-        <section className="bg-black">
+        <section className="">
             <div className="container mx-auto">
                 <div className="flex lg:h-screen md:flex-row md:h-full items-center flex-col py-[100px]">
                     <div className="text-center px-[10px] mb-[40px] md:mb-0 md:text-left">
