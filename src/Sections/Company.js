@@ -20,7 +20,7 @@ const Company = () => {
     ]
 
     return (
-        <section className="py-20">
+        <section className="">
             <div className="container mx-auto">
                 <OwlCarousel className='owl-theme' loop margin={10} items={5}>
                     {

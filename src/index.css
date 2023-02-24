@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: #0F0B33;
+    background: #0F182E;
 }
 
 p {
@@ -20,4 +20,8 @@ p {
     p {
         font-size: 16px;
     }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #FFFFFF;
 }

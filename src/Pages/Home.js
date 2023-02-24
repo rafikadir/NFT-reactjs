@@ -1,7 +1,9 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
+import Auction from '../Sections/Auction';
 import Banner from '../Sections/Banner';
 import Company from '../Sections/Company';
+import Services from '../Sections/Services';
 
 const Home = () => {
     return (
@@ -9,6 +11,8 @@ const Home = () => {
             <Navbar/>
             <Banner/>
             <Company/>
+            <Services/>
+            <Auction/>
         </>
     );
 };
