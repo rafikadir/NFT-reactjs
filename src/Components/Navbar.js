@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <nav className="md:py-4 py-2 w-full fixed">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container sm:px-0 px-4 mx-auto flex justify-between items-center">
                 <a href="/">
                     <img src={logo} className="md:max-w-[150px] max-w-[130px]" alt="logo"/>
                 </a>

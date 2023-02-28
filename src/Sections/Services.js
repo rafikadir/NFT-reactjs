@@ -24,7 +24,7 @@ const Services = () => {
 
     return (
         <section className="pt-[200px] pb-[70px]">
-            <div className="container mx-auto">
+            <div className="container mx-auto sm:px-0 px-4">
                 <SectionHeading title="Create and sell your NFTs" centered={true}/>
       
                 <div className="flex flex-col sm:flex-row">

@@ -20,8 +20,8 @@ const Company = () => {
     ]
 
     return (
-        <section className="">
-            <div className="container mx-auto">
+        <section>
+            <div className="container mx-auto sm:px-0 px-4">
                 <OwlCarousel className='owl-theme' loop margin={10} items={5}>
                     {
                         companies.map(company =>
