@@ -20,14 +20,14 @@ const Services = () => {
             "title" : "List them for sale",
             "desc" : "Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the wallet icon in the top right corner."
         }
-    ]
+    ];
 
     return (
         <section className="pt-[200px] pb-[70px]">
             <div className="container mx-auto sm:px-0 px-4">
                 <SectionHeading title="Create and sell your NFTs" centered={true}/>
       
-                <div className="flex flex-col sm:flex-row">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2">
                     {
                         services.map((service) => 
                             <div className="text-center bg-black mx-2 p-[40px] mb-4 rounded-2xl">

@@ -22,7 +22,7 @@ const NftCard = ({nftInfo}) => {
                 </div>
                 <div>
                     <span className="text-gray">Current Bid</span>
-                    <h4 className="text-[20px] font-medium"><span>{price}</span> ETH</h4>
+                    <h4 className="text-[20px] font-medium"><span>{price}</span>ETH</h4>
                 </div>
             </div>
         </div>

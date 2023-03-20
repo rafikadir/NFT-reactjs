@@ -37,7 +37,7 @@ const Auction = () => {
     ];
 
     return (
-        <section className="pb-[70px]">
+        <section className="pb-[100px]">
             <div className="container sm:px-0 px-4">
                 <div className="flex justify-between">
                     <SectionHeading title="Live Auction"/>
@@ -46,7 +46,7 @@ const Auction = () => {
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-5">
                     {
-                        nfts.map(nft => <NftCard nftInfo={nft}/> )
+                        nfts.map((nft, index) => <NftCard nftInfo={nft} key={index}/> )
                     }
                 </div>
             </div>
