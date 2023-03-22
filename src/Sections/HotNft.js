@@ -5,6 +5,7 @@ import imgOne from '../Assets/Img/nfts/1.png';
 import imgTwo from '../Assets/Img/nfts/2.png';
 import imgThree from '../Assets/Img/nfts/3.png';
 import creator from '../Assets/Img/nfts/creator.png';
+import ThemeBtn from '../Components/ThemeBtn';
 
 const HotNft = () => {
 
@@ -71,16 +72,11 @@ const HotNft = () => {
             console.log(currentCat.cat);
             return currentCat.cat === catItem;
         });
-
         setItems(updatedItem);
-
-
-
-
     };
 
     return (
-        <section>
+        <section className="pb-[70px]">
             <div className="container sm:px-0 px-4">
                 <div className="flex justify-between">
                     <SectionHeading title="Hot NFTs"/>
@@ -99,6 +95,10 @@ const HotNft = () => {
                     {
                         items.map((nft, index) => <NftCard nftInfo={nft} key={index}/> )
                     }
+                </div>
+                
+                <div className="mt-[40px] text-center mb-3">
+                    <ThemeBtn link="/" name="View More"/>
                 </div>
             </div>
         </section>
