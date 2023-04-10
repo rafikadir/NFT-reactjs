@@ -90,7 +90,7 @@ const Discover = () => {
             </section>
             <section className="pb-[70px]">
             <div className="container sm:px-0 px-4">
-                <div className="flex justify-between">               
+                <div className="flex justify-center mb-10">               
                     <div>
                         <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>setItems(nfts)}>All</button>
                         <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>filterItem('art')}>Art</button>
