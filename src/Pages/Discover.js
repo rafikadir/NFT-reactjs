@@ -7,11 +7,11 @@ const Discover = () => {
         <>
             <Navbar/>
             <section className="pt-[150px]">
-                <h2 className="text-[55px] font-bold text-center">Explore Collectibles</h2>
+                <h2 className="text-[55px] font-bold text-center pb-10">Explore Collectibles</h2>
                 
-                <div>
-                    <input type="text" placeholder='Type Your Keywords...'/>
-                    <button>
+                <div className="max-w-[500px] m-auto">
+                    <input className="bg-black border rounded-md border-white py-[15px] px-[20px] text-white" type="text" placeholder='Type Your Keywords...'/>
+                    <button className="bg-blue text-white w-[30px] h-[30px] text-center">
                         <FiSearch/>
                     </button>
                 </div>
