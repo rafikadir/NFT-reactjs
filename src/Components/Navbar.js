@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../Assets/Img/logo.png' 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
         },
         {
             'title': 'Discover',
-            'link':'/'
+            'link':'/discover'
         },
         {
             'title': 'Docs',
@@ -33,7 +34,7 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="md:py-4 py-2 w-full fixed">
+        <nav className="md:py-4 py-2 w-full fixed bg-[#0F182E] z-[9999]">
             <div className="container sm:px-0 px-4 mx-auto flex justify-between items-center">
                 <a href="/">
                     <img src={logo} className="md:max-w-[150px] max-w-[130px]" alt="logo"/>
@@ -53,7 +54,7 @@ const Navbar = () => {
                     {
                         navitems.map(navItem => 
                             <li key={navItem.title}>
-                                <a href="/" className="mx-2 text-gray hover:text-white transition duration-400">{navItem.title}</a>
+                                <Link to={navItem.link} className="mx-2 text-gray hover:text-white transition duration-400">{navItem.title}</Link>
                             </li>
                         )
                     }
@@ -64,7 +65,7 @@ const Navbar = () => {
                     {
                         navitems.map(navItem => 
                             <li key={navItem.title}>
-                                <a href="/" className="my-1 mx-3 inline-block text-gray hover:text-white transition duration-400">{navItem.title}</a>
+                                <Link to={navItem.link} className="my-1 mx-3 inline-block text-gray hover:text-white transition duration-400">{navItem.title}</Link>
                             </li>
                         )
                     }

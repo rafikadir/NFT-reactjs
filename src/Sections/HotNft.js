@@ -69,7 +69,6 @@ const HotNft = () => {
 
     const filterItem = (catItem) => {
         const updatedItem = nfts.filter((currentCat) =>{
-            console.log(currentCat.cat);
             return currentCat.cat === catItem;
         });
         setItems(updatedItem);
@@ -82,12 +81,12 @@ const HotNft = () => {
                     <SectionHeading title="Hot NFTs"/>
                    
                     <div>
-                        <button className="text-white border border-blue px-6 py-2 ml-2" onClick={()=>setItems(nfts)}>All</button>
-                        <button className="text-white border border-blue px-6 py-2 ml-2" onClick={()=>filterItem('art')}>Art</button>
-                        <button className="text-white border border-blue px-6 py-2 ml-2" onClick={()=>filterItem('sports')}>Sports</button>
-                        <button className="text-white border border-blue px-6 py-2 ml-2" onClick={()=>filterItem('visual')}>Visual</button>
-                        <button className="text-white border border-blue px-6 py-2 ml-2" onClick={()=>filterItem('video')}>Videos</button>
-                        <button className="text-white border border-blue px-6 py-2 ml-2" onClick={()=>filterItem('music')}>Music</button>
+                        <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>setItems(nfts)}>All</button>
+                        <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>filterItem('art')}>Art</button>
+                        <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>filterItem('sports')}>Sports</button>
+                        <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>filterItem('visual')}>Visual</button>
+                        <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>filterItem('video')}>Videos</button>
+                        <button className="text-white border border-blue px-6 py-2 ml-2 hover:bg-blue" onClick={()=>filterItem('music')}>Music</button>
                     </div>
                 </div>
 
